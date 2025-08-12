@@ -3,37 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
-    <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="main.css">
+    <title>Imitation Game</title>
+    <link rel="stylesheet" href="css">
 </head>
 <body>
-    <div class="main">
-        <form action="">
-            <h1>Login</h1>
-            <div class="textbox">
-                <input type="text" placeholder="UserName" required>
-                <i class='bx bxs-user'></i>
-            </div>
-            <div class="textbox">
-                <input type="password" placeholder="Password" required>
-                <i class='bx bxs-lock-alt'></i>
-            </div>
-
-            <div class="checkbox">
-                <label> <input type="checkbox"> Remember Me</label>
-                <a href="#">Forget Password</a>
-            </div>
-
-            <button class="button" type="submit"> Login</button>
-            <div class="register">
-                <p>Don't have an account ?
-                    <a href="#"> Register</a>
-                </p>
-                
-            </div>
-        </form>
+    <div class="container">
+        <h1>Imitation Game</h1>
+        <div class="video-preview">
+            <video id="gameVideo" controls></video>
+            <button id="startPreview">Start Preview</button>
+        </div>
+        <div class="record-section">
+            <button id="recordBtn">Record Your Imitation</button>
+            <div class="soundwave" id="soundwave"></div>
+        </div>
+        <button id="submitBtn">Submit</button>
+        <div class="players-videos" id="playersVideos">
+            <!-- Other players' videos will appear here -->
+        </div>
+        <div class="rating-buttons">
+            <button class="like">👍 Like</button>
+            <button class="dislike">👎 Dislike</button>
+            <button class="double-like">💖 Double Like</button>
+        </div>
+        <div class="leaderboard" id="leaderboard">
+            <!-- Leaderboard will appear here -->
+        </div>
     </div>
+    <!-- You will need JS for video, recording, and multiplayer features -->
 </body>
 </html>
