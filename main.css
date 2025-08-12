@@ -1,123 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-*{
+/* Imitation Game CSS */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('img.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
 }
-
-.main{
-    width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    color: white;
-    padding: 30px 40px;
-    border-radius: 15px;
-}
-
-.main h1{
-    font-size: 36px;
+h1 {
     text-align: center;
+    color: #2d3a4a;
+    margin-bottom: 32px;
 }
-
-.main .textbox{
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-    position: relative;
-}
-
-.main .textbox input{
-    width: 100%;
-    height: 100%;     
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: white;
-    padding: 20px 45px 20px 20px;    
-}
-
-.main input::placeholder{
-    color: white;
-}
-
-
-.main i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
-.main .checkbox{
+.video-preview {
     display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
 }
-
-.main label input{
-    accent-color: white;
-    margin-right: 3px;
-}
-
-.checkbox a{
-    color: white;
-    text-decoration: none;
-}
-
-.checkbox a:hover{
-    text-decoration: underline;
-    transform: scale(1.02);
-}
-
-
-.main .button{
+#gameVideo {
     width: 100%;
-    height: 45px;
-    background: white;
+    max-width: 480px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #222;
+}
+#startPreview {
+    padding: 8px 20px;
+    background: #4f8cff;
+    color: #fff;
     border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
-    font-weight: 600;
 }
-
-.main .register{
-    font-size: 14.5px;
+.record-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+#recordBtn {
+    padding: 10px 24px;
+    background: #ffb84f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.soundwave {
+    width: 100%;
+    max-width: 480px;
+    height: 60px;
+    background: #e3e7ef;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+#submitBtn {
+    display: block;
+    margin: 0 auto 32px auto;
+    padding: 10px 32px;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.players-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.rating-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.rating-buttons button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #e3e7ef;
+    color: #2d3a4a;
+    transition: background 0.2s;
+}
+.rating-buttons .like:hover {
+    background: #4f8cff;
+    color: #fff;
+}
+.rating-buttons .dislike:hover {
+    background: #ff4f4f;
+    color: #fff;
+}
+.rating-buttons .double-like:hover {
+    background: #ffb84f;
+    color: #fff;
+}
+.leaderboard {
+    background: #e3e7ef;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 480px;
+    margin: 0 auto;
     text-align: center;
-    margin: 20px 0 15px;
-}
-
-
-.register p a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.register p a:hover{
-    text-decoration: underline;
-    transform: scale(1.02);
+    font-size: 18px;
+    color: #2d3a4a;
 }
 
